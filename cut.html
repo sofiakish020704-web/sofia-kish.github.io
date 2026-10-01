@@ -361,7 +361,7 @@ html[data-wall="night"] .ic.sel .g{background:rgba(255,255,255,.14)}
   .case,.about .top{grid-template-columns:1fr}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-.me .ph{background:transparent!important;border-radius:0!important;overflow:visible!important}.me .ph img{object-fit:contain!important;object-position:50% 100%;filter:drop-shadow(0 6px 10px rgba(80,30,60,.18))}#lock .ava{position:relative;background:linear-gradient(145deg,rgba(255,255,255,.55),rgba(255,255,255,.14) 55%,rgba(255,255,255,.32));-webkit-backdrop-filter:blur(18px) saturate(190%);backdrop-filter:blur(18px) saturate(190%);box-shadow:inset 0 1.5px 1px rgba(255,255,255,.95),inset 0 -1px 1px rgba(255,255,255,.35),inset 0 0 0 1px rgba(255,255,255,.45),0 10px 28px rgba(60,20,40,.16)!important}#lock .ava::after{content:"";position:absolute;inset:0;border-radius:50%;pointer-events:none;background:radial-gradient(120% 70% at 30% 0%,rgba(255,255,255,.55),transparent 45%);mix-blend-mode:screen;opacity:.55}#lock .ava img{object-fit:cover;object-position:50% 0;filter:drop-shadow(0 3px 6px rgba(60,20,40,.18))}</style>
+#lock .ava{position:relative;background:linear-gradient(145deg,rgba(255,255,255,.55),rgba(255,255,255,.14) 55%,rgba(255,255,255,.32));-webkit-backdrop-filter:blur(18px) saturate(190%);backdrop-filter:blur(18px) saturate(190%);box-shadow:inset 0 1.5px 1px rgba(255,255,255,.95),inset 0 -1px 1px rgba(255,255,255,.35),inset 0 0 0 1px rgba(255,255,255,.45),0 10px 28px rgba(60,20,40,.16)!important}#lock .ava::after{content:"";position:absolute;inset:0;border-radius:50%;pointer-events:none;background:radial-gradient(120% 70% at 30% 0%,rgba(255,255,255,.55),transparent 45%);mix-blend-mode:screen;opacity:.55}#lock .ava img{object-fit:cover;object-position:50% 0;filter:drop-shadow(0 3px 6px rgba(60,20,40,.18))}.me .ph{background:transparent!important;border-radius:0!important;overflow:visible!important}.me .ph img{object-fit:contain!important;object-position:50% 100%;filter:drop-shadow(0 6px 10px rgba(80,30,60,.18))}.nb-page img.ph{box-shadow:none!important;border-radius:0!important;object-fit:contain!important;background:transparent!important;filter:drop-shadow(0 4px 8px rgba(80,30,60,.15))}</style>
 </head>
 <body>
 
@@ -496,7 +496,7 @@ var FIG="https://www.figma.com/design/rDrK1r9hTwUwN6AHotl9bV/%D0%9F%D0%BE%D1%80%
 var FIG2=FIG+"?node-id=1-2", FIG3=FIG+"?node-id=1-3", DP="https://dprofile.ru/sofia.kish", MAIL="sofia.kishnevskaya@yandex.ru";
 $("dockFig").href=FIG2;
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
-var ME="i-me.jpg", AVA=$("avaSrc").src; $("notifImg").src=AVA;
+var ME=$("meSrc").src, AVA=$("avaSrc").src; $("notifImg").src=AVA;
 var coarse=matchMedia("(hover:none),(pointer:coarse)").matches;
 function mobile(){return innerWidth<=760}
 
